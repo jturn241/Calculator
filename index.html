@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <title>Calculator</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&family=Oswald:wght@200&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <script defer src="calculator.js"></script> 
+</head>
+
+<body>
+    <header>Calculator</header>
+    <div class="container">  
+        <div class="calculator">
+            <div id="screen"></div>
+            <button class="buttons" accesskey="7" onclick="populateDisplay(7)">7</button>
+            <button class="buttons" onclick="populateDisplay(8)">8</button>
+            <button class="buttons" onclick="populateDisplay(9)">9</button>
+            <button class="buttons" onclick="populateDisplay(4)">4</button>
+            <button class="buttons" onclick="populateDisplay(5)">5</button>
+            <button class="buttons" onclick="populateDisplay(6)">6</button>
+            <button class="buttons" onclick="populateDisplay(1)">1</button>
+            <button class="buttons" onclick="populateDisplay(2)">2</button>
+            <button class="buttons" onclick="populateDisplay(3)">3</button>
+            <button class="buttons" onclick="populateDisplay(0)">0</button>
+            <button class="buttons" id="disabled" onclick="populateDisplay('.');disableButton()">.</button> 
+            <button class="buttons" onclick="populateDisplay('delete')">Backspace</button>
+            <button class="operatorButtons" onclick="clearScreen()">Clear</button>
+            <button class="operatorButtons" onclick="operator(add)">+</button>
+            <button class="operatorButtons" onclick="operator(subtract)">-</button>
+            <button class="operatorButtons" onclick="operator(multiply)">*</button>
+            <button class="operatorButtons" onclick="operator(divide)">/</button>
+            <button class="operatorButtons" onclick="equals()">=</button>
+        </div>
+    </div>    
+    <footer class="footer">Created by jturn241
+        <a class="fib fi-github" href="https://github.com/jturn241" target="_blank">
+            <img src="GitHub-Mark-32px.png">
+        </a>
+    </footer>
+</body>
+</html>
